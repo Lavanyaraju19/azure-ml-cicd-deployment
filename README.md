@@ -60,30 +60,6 @@ aml-registermodel: Register models in Azure.
 
 aml-compute: Manage AKS clusters if deploying to AKS.
 
-Example Workflow
-
-name: Deploy Model to Azure
-on: [push]
-jobs:
-  deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      - name: Deploy Model
-        uses: Azure/aml-deploy@v1
-        with:
-          azure_subscription_id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-          azure_resource_group: 'my-resource-group'
-          model_name: 'my-model'
-
-Action Inputs
-
-Input | Description | Default
-azure_subscription_id | Azure Subscription ID | Required
-azure_resource_group | Resource group in Azure | Required
-model_name | Name of the model to deploy | Required
-test_enabled | Enable post-deployment testing (true/false) | false
 
 Post-Deployment Testing
 To validate the model after deployment, provide a test script located at code/test/test.py (or customize the path). 
