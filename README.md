@@ -5,7 +5,7 @@
 
 ## Deprecation notice
 
-This Action is deprecated. Instead, consider using the [CLI (v2)](https://docs.microsoft.com/azure/machine-learning/how-to-configure-cli) to manage and interact with Azure Machine Learning endpoints and deployments in GitHub Actions.
+This Action is deprecated. Instead, consider using the [CLI (v2)](https://docs.microsoft.com/azure/machine-learning/how-to-configure-cli) to  manage and interact with Azure Machine Learning endpoints and deployments in GitHub Actions.
 
 **Important:** The CLI (v2) is not recommended for production use while in preview.
 
